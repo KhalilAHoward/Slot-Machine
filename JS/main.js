@@ -1,45 +1,24 @@
-const slotLookup = {
-    ichigo: {
-        imageUrl: 'placeholder.png'
-    },
-    naruto: {
-        imageUrl: 'placeholder.png'
-    },
-    luffy: {
-       imageUrl: 'placeholder.png'
-    }
+
+//slots
+const slot1 = document.querySelector('#slot1')
+const slot2 = document.querySelector('#slot2')
+const slot3 = document.querySelector('#slot3')
+const slotChoices = ["1", "2", "3"]
+
+function randChoice() {
+    let number=Math.floor(Math.random()*slotChoices.length);
+    console.log(number)
+    return slotChoices[number];
 }
 
-//state variables 
-let slots;
+function slotSpin () {
+    const option1 = randChoice()
+    const option2 = randChoice()
+    const option3 = randChoice()
 
-const slotEl = {
-    slotOne: {
-        borderEl: document.querySelector('#slot1')
-        imgEl: document.querySelector('#slot1 img')
-    },
-    slotTwo: {
-        borderEl: document.querySelector('#slot2')
-        imgEl: document.querySelector('#slot2 img')
-    },
-    slotThree: {
-        borderEl: document.querySelector('#slot3')
-        imgEl: document.querySelector('#slot3 img')
-    }
-}
-//initialize state variables
-function init() {
-    slots = {
-        slotOne: "ichigo",
-        slotTwo: "naruto",
-        slotThree: "luffy"
-    };
-    render();
+    slot1.innerText = option1
+    slot2.innerText = option2
+    slot3.innerText = option3
 }
 
-function render() {
-
-}
-
-const slotChoices ["1", "2", "3"]
-const randChoice = Math.floor(Math.random()*slotChoices.length);
+slotSpin()

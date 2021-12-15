@@ -1,0 +1,16 @@
+.slot {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  #machine:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h1 {
+    padding: 100px;
+    text-align: center;
+}

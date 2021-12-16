@@ -1,10 +1,11 @@
 .slot {
-    float: left;
+    float: right;
     width: 33.33%;
+    font-size: 100px;
   }
   
-  /* Clear floats after the columns */
-  #machine:after {
+/* Clear floats after the columns */
+#machine:after {
     content: "";
     display: table;
     clear: both;
@@ -16,5 +17,15 @@ h1 {
 }
 
 button {
-    margin: 100px;
+    margin-top: 100px;
+}
+
+#message {
+    text-align: center;
+    display: none;
+    font-size: xx-large;
+}
+
+body {
+    text-align: center;
 }

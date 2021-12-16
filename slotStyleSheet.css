@@ -20,7 +20,7 @@ button {
     margin-top: 100px;
 }
 
-#message {
+#message, #sorry {
     text-align: center;
     display: none;
     font-size: xx-large;

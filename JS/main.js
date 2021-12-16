@@ -42,6 +42,7 @@ function youWin() {
 function hideMessage() {
     const msg = document.querySelector('#message')
     msg.style.display = "none";
+    return `Try Again`
 }
 
 slotSpin()

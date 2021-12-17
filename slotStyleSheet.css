@@ -20,7 +20,7 @@ button {
     margin-top: 100px;
 }
 
-#message, #sorry {
+#message {
     text-align: center;
     display: none;
     font-size: xx-large;
@@ -28,4 +28,11 @@ button {
 
 body {
     text-align: center;
+    background-color: aqua;
+}
+
+#lost {
+    text-align: center;
+    display: none;
+    font-size: xx-large;
 }

@@ -1,5 +1,12 @@
 # Slot-Machine
 slot machine project GA
+
+Psuedocode
+1. Create postion for slots
+2. Create win conditions
+3. Produce losing message
+
+
 Technologies Used: JavaScript, HTML, CSS
 
 
